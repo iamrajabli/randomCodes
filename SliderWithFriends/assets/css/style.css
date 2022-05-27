@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@500&family=Montserrat:wght@400;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+@import url('reset.css');
+body {
+    font-family: 'Montserrat';
+}
+
+#slide {
+    width: 1170px;
+    margin: 40px auto;
+    position: relative;
+}
+
+.slide__container {
+    display: flex;
+    width: 500%;
+}
+
+.slide__item {
+    width: 100%;
+}
+
+.slide__item img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.slide__header {
+    font-size: 60px;
+    display: flex;
+    flex-direction: row-reverse;
+    font-weight: 700;
+}
+
+.slide__control {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-25%);
+    font-size: 120px;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.slide__control i {
+    background-color: rgba(255, 255, 255, .4);
+    width: 100px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.slide__navigation {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.slide__navigation ol {
+    display: flex;
+    gap: 20px;
+}
+
+.slide__navigation ol li {
+    width: 60px;
+    height: 20px;
+    background-color: rgba(255, 255, 255);
+    opacity: .4;
+    cursor: pointer;
+}
+
+.activeNav {
+    opacity: .8 !important;
+}
