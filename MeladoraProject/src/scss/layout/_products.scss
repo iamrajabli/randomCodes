@@ -8,7 +8,7 @@
             box-shadow: 3px 2px 20px 0px rgba(0, 0, 0, .1);
 
             img {
-                width: 100%;
+                width: 80%;
                 object-fit: cover;
             }
 
@@ -23,11 +23,15 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576) {
     #products {
         .container {
             .products__item {
-                width: 60%;
+                width: 50%;
+
+                img {
+                    width: 70% !important;
+                }
             }
         }
     }
@@ -38,6 +42,10 @@
         .container {
             .products__item {
                 width: 60%;
+
+                img {
+                    width: 70% !important;
+                }
             }
         }
     }

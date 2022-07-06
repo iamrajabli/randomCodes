@@ -175,7 +175,7 @@ nav ul {
 }
 
 #products .container .products__item img {
-  width: 100%;
+  width: 80%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -198,9 +198,21 @@ nav ul {
           box-shadow: 7px 1px 7px 0px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 576) {
+  #products .container .products__item {
+    width: 50%;
+  }
+  #products .container .products__item img {
+    width: 70% !important;
+  }
+}
+
 @media (max-width: 768px) {
   #products .container .products__item {
     width: 60%;
+  }
+  #products .container .products__item img {
+    width: 70% !important;
   }
 }
 
@@ -214,10 +226,139 @@ nav ul {
   }
 }
 
+#banner {
+  background-image: url("/src/resources/img/banner2.png");
+  height: 500px;
+}
+
+#banner img {
+  bottom: -25%;
+  right: 10%;
+}
+
+#bizkimik {
+  margin-top: 100px;
+}
+
+#xidmetlerimiz {
+  margin: 100px 0;
+}
+
+#galereya {
+  margin: 100px 0;
+}
+
+#galereya .galereya__container {
+  width: 1140px;
+  margin: 2.5rem auto 0 auto;
+  position: relative;
+}
+
+#galereya .galereya__container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 350px;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+#galereya .galereya__container img:first-child {
+  margin-bottom: 1rem;
+}
+
+#galereya .galereya__container .galereya__control {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#galereya .galereya__container .galereya__control i {
+  font-size: 100px;
+  padding: 0 1.25rem;
+  height: 600px;
+  width: 150px;
+  color: #313131;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+#galereya .galereya__container .galereya__control i:hover {
+  background-color: rgba(0, 128, 0, 0.4);
+}
+
+#galereya .galereya__dot {
+  position: relative;
+}
+
+#galereya .galereya__dot ol {
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  margin: 0 auto;
+}
+
+#galereya .galereya__dot ol li {
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgba(145, 180, 13, 0.5);
+  cursor: pointer;
+}
+
+#galereya .galereya__dot ol .active {
+  background-color: #91b40d;
+  -webkit-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+#baglarimiz .baglarimiz__icon {
+  width: 98px;
+}
+
+#baglarimiz .baglarimiz__content p {
+  line-height: 25px;
+}
+
 #footer .footer__main {
   background-image: url("/src/resources/img/footer1.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 675px;
+}
+
+#footer .footer__other {
+  background-image: url("/src/resources/img/footer2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 564px;
+}
+
+#footer .footer__container {
+  margin-top: 150px;
 }
 /*# sourceMappingURL=main.min.css.map */
