@@ -1,22 +1,24 @@
 #galereya {
     margin: 100px 0;
 
-    .galereya__container {
-        width: 1140px;
+    .container:nth-child(2) {
         margin: $margin-xxl auto 0 auto;
         position: relative;
 
-        img {
-            object-fit: cover;
-            width: 350px;
-            height: 300px;
-            display: block;
-            margin: 0 auto;
+        .galereya__wrapper {
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 300px;
+                display: block;
+                margin: 0 auto;
+            }
+    
+            img:first-child {
+                margin-bottom: $margin;
+            }
         }
-
-        img:first-child {
-            margin-bottom: $margin;
-        }
+      
 
         .galereya__control {
             width: 100%;

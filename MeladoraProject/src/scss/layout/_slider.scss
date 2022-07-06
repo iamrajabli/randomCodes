@@ -11,3 +11,28 @@
         height: 100%;
     }
 }
+
+@media (max-width: 576px) {
+   #slider {
+    img {
+        width: 150px
+    }
+   }
+}
+
+@media (min-width:992px) and (max-width: 1200px) {
+    #slider {
+        .vegetables {
+            width: 250px;
+        }
+        .and {
+            width: 320px;
+        }
+        .ananas {
+            width: 160px;
+            height: 190px;
+            right: -1px !important;
+        }
+
+    }
+}

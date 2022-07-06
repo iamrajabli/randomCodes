@@ -13,39 +13,43 @@
         line-height: 30px;
         font-size: 15px;
     }
+
+    
+    .main__item {
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
 }
 
 
 @media (max-width: 576px) {
-    #main {
-        .main__line {
-            width: 70%;
+    .main__line {
+        width: 70%;
+    }
+
+    .main__container {
+        gap: 30px !important;
+
+        img {
+            width: 60%;
         }
 
-        .main__container {
-            gap: 30px !important;
-
-            img {
-                width: 60%;
-            }
-
-            p {
-                font-size: 12px !important;
-            }
+        p {
+            font-size: 12px !important;
         }
     }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-    #main {
-        .main__line {
-            width: 70%;
-        }
+    .main__line {
+        width: 70%;
+    }
 
-        .main__container {
-            img {
-                width: 70%;
-            }
+    .main__container {
+        img {
+            width: 70%;
         }
     }
 }
