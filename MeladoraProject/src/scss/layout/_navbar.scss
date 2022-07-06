@@ -1,0 +1,32 @@
+nav {
+    .burger__menu {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    nav {
+        .burger__menu {
+            display: flex;
+        }
+
+        ul {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    nav {
+        ul {
+            font-size: 14px;
+            gap: 10px;
+        }
+    }
+}

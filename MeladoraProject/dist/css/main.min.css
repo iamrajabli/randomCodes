@@ -58,8 +58,114 @@ header {
   background-size: cover;
 }
 
+nav .burger__menu {
+  display: none;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  nav .burger__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav ul {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  nav ul {
+    font-size: 14px;
+    gap: 10px;
+  }
+}
+
+#slider {
+  margin-top: -125px;
+}
+
+#slider .slider__wrapper {
+  height: 250px;
+}
+
+#slider .slider__item {
+  background-color: #1A5221;
+  width: 95%;
+  height: 100%;
+}
+
+#main {
+  margin-top: 100px;
+  background-color: #eeeeee;
+}
+
+#main .main__banner img {
+  height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#main .main__container {
+  line-height: 30px;
+  font-size: 15px;
+}
+
+@media (max-width: 576px) {
+  #main .main__line {
+    width: 70%;
+  }
+  #main .main__container {
+    gap: 30px !important;
+  }
+  #main .main__container img {
+    width: 60%;
+  }
+  #main .main__container p {
+    font-size: 12px !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  #main .main__line {
+    width: 70%;
+  }
+  #main .main__container img {
+    width: 70%;
+  }
+}
+
+#garden {
+  margin-top: 100px;
+}
+
+#garden .garden__item {
+  width: 90%;
+}
+
+#garden .garden__item p {
+  line-height: 20px;
+  color: #7C7A7A;
+}
+
+#garden .garden__item .garden__icon {
+  width: 100px;
+  height: 50px;
+}
+
+@media (max-width: 968px) {
+  .garden__icon {
+    width: 50%;
+  }
+}
+
 #products {
-  margin-bottom: 100px;
+  margin: 100px 0;
 }
 
 #products .container .products__item {
@@ -90,5 +196,28 @@ header {
           align-items: center;
   -webkit-box-shadow: 7px 1px 7px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 7px 1px 7px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  #products .container .products__item {
+    width: 60%;
+  }
+}
+
+#blog .blog__item img {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  #blog .blog__wrapper {
+    width: 70% !important;
+  }
+}
+
+#footer .footer__main {
+  background-image: url("/src/resources/img/footer1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 675px;
 }
 /*# sourceMappingURL=main.min.css.map */

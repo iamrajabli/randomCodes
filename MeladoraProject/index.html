@@ -14,11 +14,11 @@
         <section id="header-top">
             <div class="container border-bottom">
                 <div class="row align-items-center pt-3 pb-3">
-                    <div class="col-6 p-0 d-flex align-items-center gap-1">
+                    <div class="col-6 p-md-0 px-2 d-flex align-items-center gap-1">
                         <img src="/src/resources/icon/tel.svg" alt="">
                         <span class="text-white">+994 (70) 5555777</span>
                     </div>
-                    <div class="col-6 p-0 d-flex justify-content-end gap-3">
+                    <div class="col-6 p-md-0 px-2 d-flex justify-content-end gap-3">
                         <img src="/src/resources/icon/facebook.svg" alt="">
                         <img src="/src/resources/icon/instagram.svg" alt="">
                         <img src="/src/resources/icon/linkedin.svg" alt="">
@@ -36,7 +36,11 @@
                         <img src="/src/resources/img/logo.svg" alt="">
                     </div>
                     <div class="col-9 d-flex justify-content-end align-items-center p-0">
-                        <ul class="d-flex gap-3">
+                        <div class="burger__menu gap-20">
+                            <i class="fa-solid fa-magnifying-glass text-white mx-3"></i>
+                            <i class="fa-solid fa-bars text-white"></i>
+                        </div>
+                        <ul class="gap-3">
                             <li><a href="bizkimik.html" class="text-decoration-none text-white">Biz kimik?</a></li>
                             <li><a href="baglarimiz.html" class="text-decoration-none text-white">Bağlarımız</a></li>
                             <li><a href="mehsullarimiz.html" class="text-decoration-none text-white">Məhsullarımız</a>
@@ -53,13 +57,12 @@
         </nav>
     </header>
 
-    <section id="card__slider" style="margin-top: -125px;">
+    <section id="slider">
         <div class="container">
-            <div class="row">
-                <div class="col-4 d-flex justify-content-center p-0" style="height: 250px;">
-                    <div class="card__item position-relative"
-                        style="background-color: #1A5221; width: 95%; height: 100%;">
-                        <div class="card__content mt-5 ms-4">
+            <div class="row d-xl-flex flex-nowrap">
+                <div class="slider__wrapper col-lg-4 col-12 d-flex justify-content-center p-0">
+                    <div class="slider__item position-relative" style="background-color: #1A5221;">
+                        <div class="slider__content mt-5 ms-4">
                             <h3 class="h3 text-white">Meyvələr</h3>
                             <a href="#" class="text-white text-decoration-none">Daha çox...</a>
                         </div>
@@ -67,10 +70,9 @@
                             src="/src/resources/img/ananas.png" alt="">
                     </div>
                 </div>
-                <div class="col-4 d-flex justify-content-center p-0" style="height: 250px;">
-                    <div class="card__item position-relative"
-                        style="background-color: #91B40D; width: 95%; height: 100%;">
-                        <div class="card__content mt-5 ms-4">
+                <div class="slider__wrapper col-lg-4 d-none d-lg-flex justify-content-center p-0">
+                    <div class="slider__item position-relative" style="background-color: #91B40D;">
+                        <div class="slider__content mt-5 ms-4">
                             <h3 class="h3 text-white">Meyvələr</h3>
                             <a href="#" class="text-white text-decoration-none">Daha çox...</a>
                         </div>
@@ -78,10 +80,9 @@
                             src="/src/resources/img/vegetables.png" alt="">
                     </div>
                 </div>
-                <div class="col-4 d-flex justify-content-center p-0" style="height: 250px;">
-                    <div class="card__item position-relative"
-                        style="background-color: #FFBF00; width: 95%; height: 100%;">
-                        <div class="card__content mt-5 ms-4">
+                <div class="slider__wrapper col-lg-4 d-none d-lg-flex justify-content-center p-0">
+                    <div class="slider__item position-relative" style="background-color: #FFBF00;">
+                        <div class="slider__content mt-5 ms-4">
                             <h3 class="h3 text-white">Meyvələr</h3>
                             <a href="#" class="text-white text-decoration-none">Daha çox...</a>
                         </div>
@@ -93,17 +94,17 @@
         </div>
     </section>
 
-    <section id="main" style="margin-top: 100px; max-height: 700px; background-color: rgb(238, 238, 238);">
+    <section id="main">
         <div class="container-xxl">
             <div class="row">
-                <div class="col-5 p-0" style="margin-top: -50px;">
-                    <img src="/src/resources/img/ot.png" style="height: 800px;" alt="">
+                <div class="main__banner col-12 col-xl-5 col-5 p-0">
+                    <img src="/src/resources/img/ot.png" class="w-100" alt="">
                 </div>
-                <div class="col-7 p-0 mt-5">
-                    <div class="main__content  d-flex flex-column align-items-center">
+                <div class="main__container col-12 col-xl-7 p-0 d-flex flex-column justify-content-center pt-5 pb-5">
+                    <div class="main__content d-flex flex-column align-items-center">
                         <h2 class="h2">Biz kimik?</h2>
                         <img src="/src/resources/icon/line.svg" alt="">
-                        <p class="w-75 text-center" style="line-height:30px; font-size: 15px;">
+                        <p class="w-75 text-center">
                             Əslində hər şey illər əvvəl İsmayıllı rayonunda ailəvi gəzintidə olduğumuz zaman baş verdi.
                             İsmayıllı rayonunun füsunkar təbiətinin gözəlliyi bizim bir gün burda kənd təsərufatı ilə
                             məşqul olmaq arzusunu oyatdı. Daha sonra dostlarımızla bu məsələni müzakirə edərək
@@ -122,21 +123,21 @@
 
                         <h5 class="h5"> MELADORA kollektivi</h5>
                         </p>
-                        <img class="mt-3" src="/src/resources/icon/line2.svg" alt="">
+                        <img class="main__line mt-3" src="/src/resources/icon/line2.svg" alt="">
                         <div class="main__container d-flex gap-5 mt-3">
-                            <div class="main__item">
+                            <div class="main__item text-center">
                                 <img src="/src/resources/icon/organik.svg" alt="">
                                 <p class="mt-3">Organik</p>
                             </div>
-                            <div class="main__item">
+                            <div class="main__item text-center">
                                 <img src="/src/resources/icon/heart.svg" alt="">
                                 <p class="mt-3">Organik</p>
                             </div>
-                            <div class="main__item">
+                            <div class="main__item text-center">
                                 <img src="/src/resources/icon/yarpaq.svg" alt="">
                                 <p class="mt-3">Organik</p>
                             </div>
-                            <div class="main__item">
+                            <div class="main__item text-center">
                                 <img src="/src/resources/icon/quality.svg" alt="">
                                 <p class="mt-3">Organik</p>
                             </div>
@@ -147,7 +148,7 @@
         </div>
     </section>
 
-    <section id="garden" style="margin-top: 100px;">
+    <section id="garden">
         <div class="container mb-5">
             <div class="row">
                 <div class="col-12 text-center">
@@ -157,12 +158,12 @@
             </div>
         </div>
         <div class="container">
-            <div class="row">
+            <div class="row p-4 p-lg-0">
                 <div class="col-4 p-0 d-flex justify-content-left">
-                    <div class="garden__item" style="width: 90%;">
-                        <img src="/src/resources/icon/01.svg" style="margin-top: -50px;" alt="">
+                    <div class="garden__item d-flex flex-column gap-3">
+                        <img class="garden__icon" src="/src/resources/icon/01.png" alt="">
                         <h3 class="h3 ">BAĞ</h3>
-                        <p class="mb-3" style="line-height: 20px; color: #7C7A7A;">Lorem Ipsum is simply dummy
+                        <p class="mb-3">Lorem Ipsum is simply dummy
                             text
                             of the printing and typesetting industry. Lorem Ipsum has been
                             the industry’s standard dummy text ever since the 1500s.</p>
@@ -170,21 +171,21 @@
                     </div>
                 </div>
                 <div class="col-4 p-0 d-flex justify-content-center">
-                    <div class="garden__item" style="width: 90%;">
+                    <div class="garden__item d-flex flex-column gap-3">
                         <img src="/src/resources/img/dag.png" class="w-100" alt="">
                         <h3 class="h3 mt-3 ">BAĞ</h3>
-                        <p style="color: #7C7A7A;">Lorem Ipsum is simply dummy text of the printing and
+                        <p>Lorem Ipsum is simply dummy text of the printing and
                             typesetting
                             industry. Lorem Ipsum has been
                             the industry’s standard dummy text ever since the 1500s.</p>
-                        <img src="/src/resources/icon/02.svg" style="margin-bottom: -50px;" alt="">
+                        <img class="garden__icon" src="/src/resources/icon/02.png" alt="">
                     </div>
                 </div>
                 <div class="col-4 p-0 d-flex justify-content-end">
-                    <div class="garden__item" style="width: 90%;">
-                        <img src="/src/resources/icon/03.svg" style="margin-top: -50px;" alt="">
+                    <div class="garden__item d-flex flex-column gap-3">
+                        <img class="garden__icon" src="/src/resources/icon/02.png" alt="">
                         <h3 class="h3">BAĞ</h3>
-                        <p class="mb-3" style="line-height: 20px; color: #7C7A7A;">Lorem Ipsum is simply dummy
+                        <p class="mb-3">Lorem Ipsum is simply dummy
                             text
                             of the printing and typesetting industry. Lorem Ipsum has been
                             the industry’s standard dummy text ever since the 1500s.</p>
@@ -195,11 +196,11 @@
         </div>
     </section>
 
-    <section id="products" style="margin-top: 100px;">
+    <section id="products">
         <div class="container mb-4">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2 class="h2">Bağlarımız</h2>
+                    <h2 class="h2">Məhsullarımız</h2>
                     <img src="/src/resources/icon/line.svg" alt="">
                 </div>
             </div>
@@ -207,21 +208,21 @@
         <div class="container mb-5">
             <div class="row">
                 <div class="col-12 d-flex justify-content-center">
-                    <ul class="d-flex gap-3">
-                        <li><a href="#" class="text-decoration-none text-dark">Hamısı</a></li>
-                        <li><a href="#" class="text-decoration-none text-dark">Meyvələr</a></li>
-                        <li><a href="#" class="text-decoration-none text-dark">Tərəvəzlər</a></li>
-                        <li><a href="#" class="text-decoration-none text-dark">Taxıllar</a></li>
-                        <li><a href="#" class="text-decoration-none text-dark">Digər</a></li>
+                    <ul class="d-md-flex d-sm-block text-center gap-3">
+                        <li class="mt-2"><a href="#" class="text-decoration-none text-dark">Hamısı</a></li>
+                        <li class="mt-2"><a href="#" class="text-decoration-none text-dark">Meyvələr</a></li>
+                        <li class="mt-2"><a href="#" class="text-decoration-none text-dark">Tərəvəzlər</a></li>
+                        <li class="mt-2"><a href="#" class="text-decoration-none text-dark">Taxıllar</a></li>
+                        <li class="mt-2"><a href="#" class="text-decoration-none text-dark">Digər</a></li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <div class="container">
-            <div class="row border">
+            <div class="row">
                 <div class="products__tab d-flex flex-wrap p-0">
-                    <div class="col-sm-12 col-md-8 col-lg-6 col-xl-2 p-2">
+                    <div class="products__wrapper d-flex justify-content-center col-xl-2 col-lg-3 col-md-4 col-12 p-2">
                         <div class="products__item">
                             <img src="/src/resources/img/alma.png" alt="">
                             <div class="products__content">
@@ -230,7 +231,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-8 col-lg-6 col-xl-2 p-2">
+                    <div class="products__wrapper d-flex justify-content-center col-xl-2 col-lg-3 col-md-4 col-12 p-2">
                         <div class="products__item">
                             <img src="/src/resources/img/qoz.png" alt="">
                             <div class="products__content">
@@ -239,7 +240,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-8 col-lg-6 col-xl-2 p-2">
+                    <div class="products__wrapper d-flex justify-content-center col-xl-2 col-lg-3 col-md-4 col-12 p-2">
                         <div class="products__item">
                             <img src="/src/resources/img/gavali.png" alt="">
                             <div class="products__content">
@@ -248,7 +249,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-8 col-lg-6 col-xl-2 p-2">
+                    <div class="products__wrapper d-flex justify-content-center col-xl-2 col-lg-3 col-md-4 col-12 p-2">
                         <div class="products__item">
                             <img src="/src/resources/img/gilas.png" alt="">
                             <div class="products__content">
@@ -257,7 +258,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-8 col-lg-6 col-xl-2 p-2">
+                    <div class="products__wrapper d-flex justify-content-center col-xl-2 col-lg-3 col-md-4 col-12 p-2">
                         <div class="products__item">
                             <img src="/src/resources/img/armud.png" alt="">
                             <div class="products__content">
@@ -266,7 +267,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-8 col-lg-6 col-xl-2 p-2">
+                    <div class="products__wrapper d-flex justify-content-center col-xl-2 col-lg-3 col-md-4 col-12 p-2">
                         <div class="products__item">
                             <img src="/src/resources/img/saftali.png" alt="">
                             <div class="products__content">
@@ -275,7 +276,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-8 col-lg-6 col-xl-2 p-2">
+                    <div class="products__wrapper d-flex justify-content-center col-xl-2 col-lg-3 col-md-4 col-12 p-2">
                         <div class="products__item">
                             <img src="/src/resources/img/alma.png" alt="">
                             <div class="products__content">
@@ -284,7 +285,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-8 col-lg-6 col-xl-2 p-2">
+                    <div class="products__wrapper d-flex justify-content-center col-xl-2 col-lg-3 col-md-4 col-12 p-2">
                         <div class="products__item">
                             <img src="/src/resources/img/tingler.png" alt="">
                             <div class="products__content">
@@ -293,7 +294,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-8 col-lg-6 col-xl-2 p-2">
+                    <div class="products__wrapper d-flex justify-content-center col-xl-2 col-lg-3 col-md-4 col-12 p-2">
                         <div class="products__item">
                             <img src="/src/resources/img/portagal.png" alt="">
                             <div class="products__content">
@@ -309,28 +310,31 @@
 
     <section id="blog">
         <div class="container">
-            <div class="row">
-                <div class="col-4 p-3 border border-success">
+            <div class="row justify-content-center">
+                <div class="blog__wrapper col-md-12 col-lg-4 p-3 d-flex justify-content-center">
                     <div class="blog__item">
-                        <img src="/src/resources/img/blog1.png" class="w-100" alt="">
+                        <img src="/src/resources/img/blog1.png" alt="">
                         <h5 class="h5 mt-2">Lorem impsum Doler Sit Amet</h5>
-                        <p style="color: #7C7A7A; line-height: 20px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        <p style="color: #7C7A7A; line-height: 20px;">Lorem Ipsum is simply dummy text of the printing
+                            and typesetting industry. Lorem Ipsum has
                             been the industry’s standard dummy text ever since the 1500s.</p>
                     </div>
                 </div>
-                <div class="col-4 p-3 border border-success">
-                    <div class="blog__item" style="margin-top: -30px;">
-                        <img src="/src/resources/img/blog1.png" class="w-100" alt="">
+                <div class="blog__wrapper col-md-12 col-lg-4 p-3 d-flex justify-content-center">
+                    <div class="blog__item">
+                        <img src="/src/resources/img/blog1.png" alt="">
                         <h5 class="h5 mt-2">Lorem impsum Doler Sit Amet</h5>
-                        <p style="color: #7C7A7A; line-height: 20px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        <p style="color: #7C7A7A; line-height: 20px;">Lorem Ipsum is simply dummy text of the printing
+                            and typesetting industry. Lorem Ipsum has
                             been the industry’s standard dummy text ever since the 1500s.</p>
                     </div>
                 </div>
-                <div class="col-4 p-3 border border-success">
+                <div class="blog__wrapper col-md-12 col-lg-4 p-3 d-flex justify-content-center">
                     <div class="blog__item">
-                        <img src="/src/resources/img/blog1.png" class="w-100" alt="">
+                        <img src="/src/resources/img/blog1.png" alt="">
                         <h5 class="h5 mt-2">Lorem impsum Doler Sit Amet</h5>
-                        <p style="color: #7C7A7A; line-height: 20px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        <p style="color: #7C7A7A; line-height: 20px;">Lorem Ipsum is simply dummy text of the printing
+                            and typesetting industry. Lorem Ipsum has
                             been the industry’s standard dummy text ever since the 1500s.</p>
                     </div>
                 </div>
@@ -338,7 +342,50 @@
         </div>
     </section>
 
-    
+    <section id="footer">
+        <div class="container-xxl footer__main">
+            <div class="container h-100 d-flex flex-column justify-content-between">
+                <div></div>
+                <div class="row mt-5">
+                    <div class="col-lg-3 px-0 text-center mb-5">
+                        <img src="/src/resources/img/footerlogo.png" alt="">
+                    </div>
+                    <div class="col-lg-3 col-4">
+                        <ul class="text-center d-flex flex-column gap-3">
+                            <li><a href="#" class="text-decoration-none text-white">Menyular</a></li>
+                            <li><a href="#" class="text-decoration-none text-white">Menyular</a></li>
+                            <li><a href="#" class="text-decoration-none text-white">Menyular</a></li>
+                            <li><a href="#" class="text-decoration-none text-white">Menyular</a></li>
+                            <li><a href="#" class="text-decoration-none text-white">Menyular</a></li>
+                            <li><a href="#" class="text-decoration-none text-white">Menyular</a></li>
+                            <li><a href="#" class="text-decoration-none text-white">Menyular</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-4">
+                        <ul class="text-center d-flex flex-column gap-3">
+                            <li><a href="#" class="text-decoration-none text-white">Faydalı</a></li>
+                            <li><a href="#" class="text-decoration-none text-white">Faydalı</a></li>
+                            <li><a href="#" class="text-decoration-none text-white">Faydalı</a></li>
+                            <li><a href="#" class="text-decoration-none text-white">Faydalı</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-4">
+                        <ul class="text-center d-flex flex-column gap-3">
+                            <li><a href="#" class="text-decoration-none text-white">FAQ</a> </li>
+                            <li><a href="#" class="text-decoration-none text-white">FAQ</a></li>
+                            <li><a href="#" class="text-decoration-none text-white">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 px-0 pt-3 pb-3 border-top">
+                        <p class="text-white">Copyright</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>

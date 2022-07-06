@@ -1,0 +1,26 @@
+#garden {
+    margin-top: 100px;
+
+    .garden__item {
+        width: 90%;
+
+        p {
+            line-height: 20px;
+            color: #7C7A7A;
+        }
+
+        .garden__icon {
+            width: 100px;
+            height: 50px;
+        }
+
+    }
+}
+
+@media (max-width: 968px) {
+    .garden__icon {
+        width: 50%;
+    
+    }
+
+}
