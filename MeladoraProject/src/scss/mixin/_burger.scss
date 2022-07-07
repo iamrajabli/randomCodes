@@ -1,0 +1,13 @@
+@mixin burger {
+    position: absolute;
+    top: 100%;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: $c-green;
+
+    li:last-child {
+        display: none;
+    }
+}
