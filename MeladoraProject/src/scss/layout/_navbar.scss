@@ -13,13 +13,7 @@ nav {
 
     ul {
         display: flex;
-        a {
-            // transition: all 200ms linear;
-
-            // &:hover {
-            //     color: $c-green  !important;
-            // }
-        }
+      
     }
 
     .search {
@@ -28,6 +22,10 @@ nav {
         top:102%;
         z-index: 1000;
         right: 10px;
+    }
+
+    .c-white {
+        color:$c-white;
     }
 }
 
@@ -63,7 +61,14 @@ nav {
 
         ul {
             display: none;
+            z-index: 1111;
             @include burger();
+
+            li {
+                a {
+                    color: $c-black !important;
+                }
+            }
         }
     }
 }

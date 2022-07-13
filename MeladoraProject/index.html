@@ -6,12 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/dist/css/main.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <title>Ana səhifə</title>
-    <style>
 
-    </style>
 </head>
 
 <body>
@@ -46,14 +44,14 @@
                             <i class="fa-solid fa-bars text-white"></i>
                         </div>
                         <ul class="gap-3 align-items-center">
-                            <li><a href="bizkimik.html" class="text-decoration-none text-white">Biz kimik?</a></li>
-                            <li><a href="bizkimik.html" class="text-decoration-none text-white">Bağlarımız</a></li>
-                            <li><a href="mehsullarimiz.html" class="text-decoration-none text-white">Məhsullarımız</a>
+                            <li><a href="bizkimik.html" class="text-decoration-none c-white">Biz kimik?</a></li>
+                            <li><a href="bizkimik.html" class="text-decoration-none c-white">Bağlarımız</a></li>
+                            <li><a href="mehsullarimiz.html" class="text-decoration-none c-white">Məhsullarımız</a>
                             </li>
-                            <li><a href="xidmetlerimiz.html" class="text-decoration-none text-white">Xidmətlərimiz</a>
+                            <li><a href="xidmetlerimiz.html" class="text-decoration-none c-white">Xidmətlərimiz</a>
                             </li>
-                            <li><a href="sosial.html" class="text-decoration-none text-white">Sosial məsuliyyət</a></li>
-                            <li><a href="elaqe.html" class="text-decoration-none text-white">Əlaqə</a></li>
+                            <li><a href="sosial.html" class="text-decoration-none c-white">Sosial məsuliyyət</a></li>
+                            <li><a href="elaqe.html" class="text-decoration-none c-white">Əlaqə</a></li>
                             <li><i class="fa-solid fa-magnifying-glass text-white"></i></li>
                         </ul>
                     </div>
@@ -73,69 +71,37 @@
 
     <section id="slider">
         <div class="container">
-            <div class="row d-xl-flex flex-nowrap">
-                <div class="slider__wrapper col-lg-4 col-12 d-flex justify-content-center">
-                    <div class="slider__item position-relative" style="background-color: #1A5221;">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slider__item position-relative ananas">
                         <div class="slider__content mt-5 ms-4">
                             <h3 class="h3 text-white">Meyvələr</h3>
                             <a href="#" class="text-white text-decoration-none">Daha çox...</a>
                         </div>
-                        <img class="position-absolute ananas" style="bottom: 10px; right: 10px;"
+                        <img class="position-absolute" style="bottom: 10px; right: 10px;"
                             src="/src/resources/img/ananas.png" alt="">
                     </div>
-                </div>
-                <div class="slider__wrapper col-lg-4 d-none d-lg-flex justify-content-center">
-                    <div class="slider__item position-relative" style="background-color: #91B40D;">
+                    <div class="swiper-slide slider__item position-relative vegetables">
                         <div class="slider__content mt-5 ms-4">
-                            <h3 class="h3 text-white">Meyvələr</h3>
+                            <h3 class="h3 text-white">Tərəvəzlər</h3>
                             <a href="#" class="text-white text-decoration-none">Daha çox...</a>
                         </div>
-                        <img class="position-absolute vegetables" style="bottom: -10px; right: 0;"
+                        <img class="position-absolute" style="bottom: -20px; right: 0;"
                             src="/src/resources/img/vegetables.png" alt="">
                     </div>
-                </div>
-                <div class="slider__wrapper col-lg-4 d-none d-lg-flex justify-content-center">
-                    <div class="slider__item position-relative" style="background-color: #FFBF00;">
+                    <div class="swiper-slide slider__item position-relative and">
                         <div class="slider__content mt-5 ms-4">
-                            <h3 class="h3 text-white">Meyvələr</h3>
+                            <h3 class="h3 text-white">Taxıllar</h3>
                             <a href="#" class="text-white text-decoration-none">Daha çox...</a>
                         </div>
-                        <img class="position-absolute and" style="bottom: -20px; right: -50px; "
+                        <img class="position-absolute" style="bottom: -20px; right: -50px; "
                             src="/src/resources/img/and.png" alt="">
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
-
-    <!-- <section id="slider" class="mySwiper">
-        <div class="swiper-wrapper container border d-flex flex-row">
-            <div class="swiper-slide col-xl-4">
-                <div class="slider__wrapper d-flex justify-content-center">
-                    <div class="slider__item position-relative" style="background-color: #1A5221;">
-
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide col-xl-4">
-                <div class="slider__wrapper  d-flex justify-content-center">
-                    <div class="slider__item position-relative" style="background-color: #1A5221;">
-
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide col-xl-4">
-                <div class="slider__wrapper d-flex justify-content-center">
-                    <div class="slider__item position-relative" style="background-color: #1A5221;">
-
-                    </div>
-                </div>
-            </div>
-
-
-
-        </div>
-    </section> -->
 
     <section id="main">
         <div class="container-xxl">
@@ -442,17 +408,32 @@
     <script type="module" src="src/js/app.js"></script>
 
     <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
 
     <script>
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
+            slidesPerView: 3,
+            spaceBetween: 30,
 
+            breakpoints: {
+                576: {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+
+                },
+            },
         });
     </script>
 </body>
