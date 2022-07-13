@@ -6,7 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/dist/css/main.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
     <title>Ana səhifə</title>
+    <style>
+
+    </style>
 </head>
 
 <body>
@@ -33,7 +38,7 @@
             <div class="container">
                 <div class="row pb-3 pt-3 align-items-center">
                     <div class="col-3">
-                        <a href="index.html"><img src="/src/resources/img/logo.svg" alt=""></a>
+                        <a class="getToIndex" href="index.html"><img src="/src/resources/img/logo.svg" alt=""></a>
                     </div>
                     <div class="col-9 d-flex justify-content-end align-items-center p-0">
                         <div class="burger__menu gap-20">
@@ -41,7 +46,7 @@
                             <i class="fa-solid fa-bars text-white"></i>
                         </div>
                         <ul class="gap-3 align-items-center">
-                            <li class="navbg"><a href="bizkimik.html" class="text-decoration-none text-white">Biz kimik?</a></li>
+                            <li><a href="bizkimik.html" class="text-decoration-none text-white">Biz kimik?</a></li>
                             <li><a href="bizkimik.html" class="text-decoration-none text-white">Bağlarımız</a></li>
                             <li><a href="mehsullarimiz.html" class="text-decoration-none text-white">Məhsullarımız</a>
                             </li>
@@ -51,6 +56,15 @@
                             <li><a href="elaqe.html" class="text-decoration-none text-white">Əlaqə</a></li>
                             <li><i class="fa-solid fa-magnifying-glass text-white"></i></li>
                         </ul>
+                    </div>
+                </div>
+
+                <div class="search row">
+                    <div class="col-12 d-flex justify-content-end p-0">
+                        <div class="search__area">
+                            <input class="form-control my-0 py-1 amber-border" type="text" placeholder="Search"
+                                aria-label="Search" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -93,6 +107,35 @@
             </div>
         </div>
     </section>
+
+    <!-- <section id="slider" class="mySwiper">
+        <div class="swiper-wrapper container border d-flex flex-row">
+            <div class="swiper-slide col-xl-4">
+                <div class="slider__wrapper d-flex justify-content-center">
+                    <div class="slider__item position-relative" style="background-color: #1A5221;">
+
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide col-xl-4">
+                <div class="slider__wrapper  d-flex justify-content-center">
+                    <div class="slider__item position-relative" style="background-color: #1A5221;">
+
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide col-xl-4">
+                <div class="slider__wrapper d-flex justify-content-center">
+                    <div class="slider__item position-relative" style="background-color: #1A5221;">
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section> -->
 
     <section id="main">
         <div class="container-xxl">
@@ -158,38 +201,40 @@
             </div>
         </div>
         <div class="container">
-            <div class="row p-4 p-lg-0">
-                <div class="col-4 p-0 d-flex justify-content-left">
-                    <div class="garden__item d-flex flex-column gap-3">
+            <div class="row p-4 p-lg-0 gap-5 gap-md-0">
+                <div class="col-12 text-left-md col-md-4">
+                    <div class="garden__item d-flex flex-column gap-3 w-100">
                         <img class="garden__icon" src="/src/resources/icon/01.png" alt="">
                         <h3 class="h3 ">BAĞ</h3>
                         <p class="mb-3">Lorem Ipsum is simply dummy
                             text
                             of the printing and typesetting industry. Lorem Ipsum has been
                             the industry’s standard dummy text ever since the 1500s.</p>
-                        <img src="/src/resources/img/taxil.png" class="w-100" alt="">
+                        <img src="/src/resources/img/taxil.png" class="w-100 garden__img" alt="">
                     </div>
                 </div>
-                <div class="col-4 p-0 d-flex justify-content-center">
-                    <div class="garden__item d-flex flex-column gap-3">
-                        <img src="/src/resources/img/dag.png" class="w-100" alt="">
+                <div class="col-12 text-left-md col-md-4">
+                    <div class="garden__item d-flex flex-column flex-md-column-reverse gap-3  w-100">
+                        <img class="garden__icon" src="/src/resources/icon/02.png" alt="">
+
                         <h3 class="h3 mt-3 ">BAĞ</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and
                             typesetting
                             industry. Lorem Ipsum has been
                             the industry’s standard dummy text ever since the 1500s.</p>
-                        <img class="garden__icon" src="/src/resources/icon/02.png" alt="">
+                        <img src="/src/resources/img/dag.png" class="w-100 garden__img" alt="">
+
                     </div>
                 </div>
-                <div class="col-4 p-0 d-flex justify-content-end">
-                    <div class="garden__item d-flex flex-column gap-3">
+                <div class="col-12 text-left-md col-md-4">
+                    <div class="garden__item d-flex flex-column gap-3  w-100">
                         <img class="garden__icon" src="/src/resources/icon/02.png" alt="">
                         <h3 class="h3">BAĞ</h3>
                         <p class="mb-3">Lorem Ipsum is simply dummy
                             text
                             of the printing and typesetting industry. Lorem Ipsum has been
                             the industry’s standard dummy text ever since the 1500s.</p>
-                        <img src="/src/resources/img/yasilliq.png" class="w-100" alt="">
+                        <img src="/src/resources/img/yasilliq.png" class="w-100 garden__img" alt="">
                     </div>
                 </div>
             </div>
@@ -357,7 +402,7 @@
                 <div></div>
                 <div class="row mt-5">
                     <div class="col-lg-3 px-0 text-center mb-5">
-                        <img src="/src/resources/img/footerlogo.png" alt="">
+                        <a class="getToIndex" href="index.html"><img src="/src/resources/img/footerlogo.png" alt=""></a>
                     </div>
                     <div class="col-lg-3 col-4">
                         <ul class="text-center d-flex flex-column gap-3">
@@ -395,6 +440,21 @@
         </div>
     </footer>
     <script type="module" src="src/js/app.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+        });
+    </script>
 </body>
 
 

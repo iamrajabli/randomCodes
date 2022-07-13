@@ -5,24 +5,29 @@ nav {
 
     .burger__menu {
         display: none;
+    }
+
+    i {
         cursor: pointer;
     }
 
     ul {
         display: flex;
+        a {
+            // transition: all 200ms linear;
 
-        a:active {
-            background-image: url('/src/resources/icon/menubg.svg');
-            width: 150px;
-            height: 52px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            // &:hover {
+            //     color: $c-green  !important;
+            // }
         }
     }
 
-    .burger__menu:hover .net {
-        border: 1px solid red;
+    .search {
+        display: none;
+        position: absolute;
+        top:102%;
+        z-index: 1000;
+        right: 10px;
     }
 }
 
@@ -42,6 +47,10 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    a {
+        color: $c-white  !important;
+    }
 }
 
 
@@ -71,7 +80,7 @@ nav {
             font-size: 10px !important;
         }
     }
-} 
+}
 
 @media (max-width: 1200px) {
     nav {
@@ -81,5 +90,5 @@ nav {
         }
     }
 
-   
+
 }

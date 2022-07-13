@@ -60,6 +60,12 @@ table {
   margin-top: 20px;
 }
 
+@media (max-width: 992px) {
+  .title img {
+    width: 200px;
+  }
+}
+
 body {
   font-family: 'Poppins';
 }
@@ -83,6 +89,9 @@ nav .container {
 
 nav .burger__menu {
   display: none;
+}
+
+nav i {
   cursor: pointer;
 }
 
@@ -92,23 +101,12 @@ nav ul {
   display: flex;
 }
 
-nav ul a:active {
-  background-image: url("/src/resources/icon/menubg.svg");
-  width: 150px;
-  height: 52px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-nav .burger__menu:hover .net {
-  border: 1px solid red;
+nav .search {
+  display: none;
+  position: absolute;
+  top: 102%;
+  z-index: 1000;
+  right: 10px;
 }
 
 .other__title {
@@ -136,6 +134,10 @@ nav .burger__menu:hover .net {
           justify-content: center;
 }
 
+.navbg a {
+  color: #FDFDFD !important;
+}
+
 @media (max-width: 768px) {
   nav .burger__menu {
     display: -webkit-box;
@@ -154,7 +156,7 @@ nav .burger__menu:hover .net {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 100%;
-    background-color: #91B40D;
+    background-color: #FDFDFD;
   }
   nav ul li:last-child {
     display: none;
@@ -191,6 +193,35 @@ nav .burger__menu:hover .net {
   background-color: #1A5221;
   width: 95%;
   height: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 576px) {
@@ -259,6 +290,12 @@ nav .burger__menu:hover .net {
   }
 }
 
+@media (max-width: 992px) {
+  .main__banner img {
+    height: 500px !important;
+  }
+}
+
 #garden {
   margin-top: 100px;
 }
@@ -277,9 +314,21 @@ nav .burger__menu:hover .net {
   height: 50px;
 }
 
-@media (max-width: 968px) {
+@media (max-width: 992px) {
   .garden__icon {
     width: 50%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .garden__img {
+    height: 400px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .garden__img {
+    height: 300px !important;
   }
 }
 
@@ -382,8 +431,34 @@ nav .burger__menu:hover .net {
   right: 10%;
 }
 
+@media (max-width: 992px) {
+  #banner {
+    height: 300px;
+  }
+  #banner img {
+    width: 200px;
+    height: 150px;
+  }
+}
+
 #bizkimik {
   margin-top: 100px;
+}
+
+@media (max-width: 992px) {
+  #bizkimik .main__item.vegetables {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #bizkimik .main__item.vegetables img {
+    width: 400px;
+    height: 200px;
+  }
 }
 
 #xidmetlerimiz {
@@ -560,7 +635,7 @@ footer .footer__container {
 
 @media (max-width: 576px) {
   #footer img {
-    width: 230px;
+    width: 200px;
   }
   #footer ul {
     gap: 10px !important;

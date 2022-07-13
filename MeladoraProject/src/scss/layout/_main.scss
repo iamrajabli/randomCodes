@@ -14,7 +14,7 @@
         font-size: 15px;
     }
 
-    
+
     .main__item {
         img {
             width: 100%;
@@ -39,7 +39,9 @@
         p {
             font-size: 12px !important;
         }
+
     }
+
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
@@ -50,6 +52,14 @@
     .main__container {
         img {
             width: 70%;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .main__banner {
+        img {
+            height: 500px !important;
         }
     }
 }
