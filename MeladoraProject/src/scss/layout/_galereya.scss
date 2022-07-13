@@ -13,12 +13,12 @@
                 display: block;
                 margin: 0 auto;
             }
-    
+
             img:first-child {
                 margin-bottom: $margin;
             }
         }
-      
+
 
         .galereya__control {
             width: 100%;
@@ -49,6 +49,7 @@
 
     .galereya__dot {
         position: relative;
+
         ol {
             position: absolute;
             left: 50%;
@@ -72,6 +73,15 @@
                 background-color: rgba(145, 180, 13, 1);
                 box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, .3);
             }
+        }
+    }
+
+}
+
+@media (max-width: 576px) {
+    .galereya__wrapper {
+        img {
+            width: 200px;
         }
     }
 

@@ -22,14 +22,16 @@ footer {
 }
 
 @media (max-width:576px) {
-    #footer {
+    footer {
         img {
-            width: 200px;
+            width: 200px !important;
         }
+
         ul {
             gap: 10px !important;
 
         }
+
         li {
             font-size: 14px;
         }
