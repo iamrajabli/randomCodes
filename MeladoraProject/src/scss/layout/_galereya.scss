@@ -4,46 +4,22 @@
     .container:nth-child(2) {
         margin: $margin-xxl auto 0 auto;
         position: relative;
+        overflow: hidden;
 
         .galereya__wrapper {
             img {
                 object-fit: cover;
-                width: 100%;
                 height: 300px;
                 display: block;
                 margin: 0 auto;
             }
 
+            transition: all 200ms linear;
+
             img:first-child {
                 margin-bottom: $margin;
             }
         }
-
-
-        .galereya__control {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-
-            i {
-                font-size: 100px;
-                padding: 0 $padding-lg;
-                height: 600px;
-                width: 150px;
-                color: $c-black;
-                box-sizing: border-box;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                cursor: pointer;
-                transition: all 200ms linear;
-
-                &:hover {
-                    background-color: rgba(0, 128, 0, .4);
-                }
-            }
-        }
-
 
     }
 
@@ -78,11 +54,3 @@
 
 }
 
-@media (max-width: 576px) {
-    .galereya__wrapper {
-        img {
-            width: 200px;
-        }
-    }
-
-}
