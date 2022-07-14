@@ -542,6 +542,13 @@ nav .c-white {
           box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.3);
 }
 
+@media (max-width: 576px) {
+  .galereya__item img {
+    width: 200px !important;
+    height: 200px !important;
+  }
+}
+
 #baglarimiz {
   margin-top: 100px;
 }
